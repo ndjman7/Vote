@@ -1,0 +1,24 @@
+{% extends 'main/main.html' %}
+
+{% block content %}
+
+<div class="row">
+  {% for content in contents %}
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="https://img.youtube.com/vi/{{ content.videoId }}/0.jpg" alt="..." style="width:242px; height:200px;">
+      <div class="caption">
+        <h3>{{ content.title }}</h3>
+        <p>{{ content.description }}</p>
+        <p>{{ content.vote }}</p>
+        <p>
+          <a href="#" class="btn btn-primary" role="button">투표하기</a>
+          <a href="#" class="btn btn-default" role="button">영상보기</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+{% endblock %}
