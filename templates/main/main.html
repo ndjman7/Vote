@@ -11,19 +11,33 @@
   <!-- 부가적인 테마 -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+  <link rel="stylesheet" href="{% static 'css/popup.css' %}">
 </head>
-<body style="background: url('{% static 'img/background.png'%}')">
-
+<!-- <body style="background: url('{% static 'img/background.png'%}')"> -->
+<body>
   <div class="row">
     <div style="margin-top:100px;">
-      <div class="col-md-2"></div>
+      <div class="col-md-2">
+      </div>
       <div class="col-md-8">
         {% block content %}
         {% endblock %}
       </div>
       <div class="col-md-2"></div>
     </div>
+
   </div>
 
+
+  <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+  <script src="{% static 'js/popup.js' %}"></script>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.9&appId=721924057956431";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
 </body>
 </html>
