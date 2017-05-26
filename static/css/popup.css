@@ -15,16 +15,33 @@
   text-align: right;
 }
 
-.pop-layer {
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 620px;
-  height: auto;
-  background-color: #fff;
-  border: 5px solid #3571B5;
-  z-index: 10;
+@media screen and (min-width:696px) {
+  .pop-layer {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 620px;
+    height: auto;
+    background-color: #fff;
+    border: 5px solid #3571B5;
+    z-index: 10;
+  }
+}
+
+
+@media screen and (max-width:695px) {
+  .pop-layer {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    border: 5px solid #3571B5;
+    z-index: 10;
+  }
 }
 
 
