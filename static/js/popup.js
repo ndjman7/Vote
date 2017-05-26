@@ -14,12 +14,13 @@ $('.btn-example').click(function(){
             docHeight = $(document).height();
 
         // 화면의 중앙에 레이어를 띄운다.
-        if ($elHeight < docHeight || $elWidth < docWidth) {
-            $el.css({
-                marginTop: -$elHeight /2,
-                marginLeft: -$elWidth/2
-            })
-        } else {
+        if ($elHeight < docHeight || (1091 < $elWidth && $elWidth < docWidth)){
+          $el.css({
+              marginTop: -$elHeight /2,
+              marginLeft: -$elWidth/2
+          })
+        }
+        else {
             $el.css({top: 0, left: 0});
         }
 
