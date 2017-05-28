@@ -16,16 +16,14 @@
   <link rel="stylesheet" href="{% static 'css/list.css' %}">
 </head>
 <body style="background-color: #f2f2f2;">
-  <div class='header' style="background-color: white;">
+  <div class='header' style="background-color: white;"></div>
 
-  </div>
   <div style="width:100%; background-color: white;">
     <div class='step1' style="background-color: white;">
-
       <img src="{% static 'img/step1.png' %}" alt="">
-
     </div>
   </div>
+
   <div class="container-fluid" style="background-color: white;">
 
     <div class="row" stlye="margin-bottom:20px;">
@@ -42,9 +40,6 @@
                   <a href="#layer{{ forloop.counter }}" class="btn-example" role="button">
                     <img class="video-img" src="https://img.youtube.com/vi/{{ item.videoId }}/0.jpg" alt="...">
                   </a>
-                </div>
-                <div>
-                  <span style="position: absolute; top:60%; left:10px; color:white;">{{ item.title }}</span>
                 </div>
                 <p>
                   <!-- <a href="#" class="btn btn-primary" role="button">투표하기</a> -->
@@ -78,24 +73,17 @@
                   </div>
                 </div>
               </div>
-
-
+              </div>
             </div>
+            {% endfor %}
           </div>
-          {% endfor %}
         </div>
-
-
-
-
-
       </div>
-        </div>
-        <div class="col-md-2"></div>
-      </div>
+    <div class="col-md-2"></div>
     </div>
+  </div>
 
-    <div class= "row" style="background-color: #f2f2f2;">
+  <div class= "row" style="background-color: #f2f2f2;">
       <div class="col-md-2">
       </div>
       <div class="col-md-8">
@@ -107,9 +95,6 @@
                 <a href="#layer{{ forloop.counter }}" class="btn-example" role="button">
                   <img class="video-img" src="https://img.youtube.com/vi/{{ content.videoId }}/0.jpg" alt="...">
                 </a>
-              </div>
-              <div>
-                <span style="position: absolute; top:60%; left:10px; color:white;">{{ content.title }}</span>
               </div>
               <p>
                 <!-- <a href="#" class="btn btn-primary" role="button">투표하기</a> -->
@@ -143,21 +128,17 @@
                 </div>
               </div>
             </div>
-
-
           </div>
         </div>
         {% endfor %}
       </div>
+      <div div class="col-md-2"></div>
     </div>
-    <div div class="col-md-2">
 
-    </div>
   </div>
 
   <div class='step2' style="background-color: #f2f2f2;">
     <img src="{% static 'img/step2.png' %}" alt="">
-
   </div>
 
 
@@ -231,8 +212,6 @@
       <img src="{% static 'img/ex.png' %}" alt="">
     </div>
 
-
-
     <div class="row" style="background-color: #f2f2f2;">
       <div>
         <div class="col-md-3">
@@ -242,7 +221,6 @@
         </div>
         <div class="col-md-3"></div>
       </div>
-
     </div>
   </div>
 
