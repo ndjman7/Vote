@@ -10,7 +10,7 @@
   }
 
   .small {
-    width: 49.5%;
+    width: 49%;
     margin:0;
     display:inline-block;
   }
@@ -129,8 +129,8 @@
   .header {
     background: url('../img/title.png');
     background-position:center;
-    background-repeat: space;
-    background-size: 1600px 750px;
+    background-repeat: no-repeat;
+    background-size: 1800px 750px;
     height:750px;
   }
 

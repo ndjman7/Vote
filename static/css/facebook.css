@@ -2,8 +2,18 @@
   width: 100% !important;
 }
 
-.fb-wrapper {
-  margin: 0 auto;
-  width:95px;
-  height:30px;
+@media screen and (max-width:700px) {
+  .fb-wrapper {
+    margin: 0 auto;
+    width:95px;
+    height:30px;
+  }
+}
+
+@media screen and (min-width:1092px) {
+  .fb-wrapper {
+    margin: 0 auto;
+    width:95px;
+    height:30px;
+  }
 }
