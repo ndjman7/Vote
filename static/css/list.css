@@ -33,13 +33,13 @@
   }
 
   .step3 {
-    width: 350px;
-    height:25px;
+    width: 307px;
+    height:22px;
     margin: 0 auto;
   }
 
   .step3 > img{
-    height: 25px;
+    height: 22px;
     margin:0 auto;
   }
 }

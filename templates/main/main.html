@@ -41,20 +41,6 @@
                     <img class="video-img" src="https://img.youtube.com/vi/{{ item.videoId }}/0.jpg" alt="...">
                   </a>
                 </div>
-                <p>
-                  <!-- <a href="#" class="btn btn-primary" role="button">투표하기</a> -->
-                  <div class="fb-wrapper" style="margin:0 auto; width:80px; height:30px;">
-                    <div class="fb-like"
-                    data-href="http://abiliter9challenge.pythonanywhere.com/{ item.id}}"
-                    data-layout="button_count"
-                    data-action="like"
-                    data-size="large"
-                    data-width="600px"
-                    data-show-faces="false"
-                    data-share="false">
-                  </div>
-                </div>
-              </p>
               <div id="dim-layer{{ forloop.counter }}">
                 <div class="dimBg"></div>
                 <div id="layer{{ forloop.counter }}" class="pop-layer">
@@ -83,7 +69,10 @@
     </div>
   </div>
 
-  <div class= "row" style="background-color: #f2f2f2;">
+  <hr>
+
+  <div class="container-fluid">
+    <div class= "row" style="background-color: #f2f2f2;">
       <div class="col-md-2">
       </div>
       <div class="col-md-8">
@@ -135,6 +124,7 @@
       <div div class="col-md-2"></div>
     </div>
 
+  </div>
   </div>
 
   <div class='step2' style="background-color: #f2f2f2;">
