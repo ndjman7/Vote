@@ -1,49 +1,7 @@
+
 {% extends 'main/main.html' %}
+{% load staticfiles %}
 
 {% block content %}
 
-<div class="row">
-  {% for content in contents %}
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img class="video-img" src="https://img.youtube.com/vi/{{ content.videoId }}/0.jpg" alt="...">
-      <div class="caption">
-        <h3>{{ content.title }}</h3>
-        <p>{{ content.description }}</p>
-        <p>{{ content.vote }}</p>
-        <p>
-          <!-- <a href="#" class="btn btn-primary" role="button">투표하기</a> -->
-          <div class="fb-like"
-            data-href="http://abiliter9challenge.pythonanywhere.com/{{content.id}}"
-            data-layout="box_count"
-            data-action="like"
-            data-size="large"
-            data-show-faces="false"
-            data-share="false">
-          </div>
-          <a href="#layer{{ forloop.counter }}" class="btn btn-default btn-example" role="button">영상보기</a>
-          <div id="dim-layer{{ forloop.counter }}">
-            <div class="dimBg"></div>
-            <div id="layer{{ forloop.counter }}" class="pop-layer">
-              <div class="pop-container">
-                <div class="pop-conts">
-                  <!--content //-->
-                  <p class="ctxt mb20">
-                    <iframe id="iframe{{ forloop.counter }}" width="560" height="315" src="https://www.youtube.com/embed/{{ content.videoId }}" frameborder="0" allowfullscreen></iframe>
-                  </p>
-
-                  <div class="btn-r">
-                    <a href="#" class="btn-layerClose">Close</a>
-                  </div>
-                  <!--// content-->
-                </div>
-              </div>
-            </div>
-          </div>
-        </p>
-      </div>
-    </div>
-  </div>
-  {% endfor %}
-</div>
 {% endblock %}
