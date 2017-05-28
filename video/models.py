@@ -2,7 +2,7 @@ from django.db import models
 
 class Content(models.Model):
     title = models.CharField(max_length = 50)
-    description = models.CharField(max_length = 200)
+    description = models.CharField(max_length = 200, null=True)
     videoId = models.CharField(max_length = 50)
     vote = models.IntegerField(default=0)
 

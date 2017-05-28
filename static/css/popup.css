@@ -1,5 +1,5 @@
 .pop-layer .pop-container {
-  padding: 20px 25px;
+  padding: 20px 25px 10px 25px;
 }
 
 .pop-layer p.ctxt {
@@ -9,7 +9,7 @@
 
 .pop-layer .btn-r {
   width: 100%;
-  margin: 10px 0 20px;
+  margin: 10px 0 5px;
   padding-top: 10px;
   border-top: 1px solid #DDD;
   text-align: right;

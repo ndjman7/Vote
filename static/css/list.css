@@ -10,9 +10,13 @@
   }
 
   .small {
-    width: 48%;
+    width: 49.5%;
     margin:0;
     display:inline-block;
+  }
+  .small2 {
+    width:50%;
+    float:left;
   }
 
 
@@ -95,7 +99,6 @@
     width: 800px;
     height:100px;
     margin: 0 auto;
-    margin-top:0;
 
   }
 
@@ -127,8 +130,8 @@
     background: url('../img/title.png');
     background-position:center;
     background-repeat: space;
-    background-size: 1550px 800px;
-    height:800px;
+    background-size: 1600px 750px;
+    height:750px;
   }
 
 }

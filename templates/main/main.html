@@ -23,7 +23,7 @@
       <img src="{% static 'img/step1.png' %}" alt="">
     </div>
   </div>
-
+  <div style="width:100%; height:30px; background-color: white;"></div>
   <div class="container-fluid" style="background-color: white;">
 
     <div class="row" stlye="margin-bottom:20px;">
@@ -82,8 +82,8 @@
       <div class="col-md-8">
         <div class="row">
           {% for content in contents %}
-          <div class="col-sm-3 col-md-3 small">
-            <div class="thumbnail" style="padding: 0px; position:relative;">
+          <div class="col-sm-3 col-md-3">
+            <div class="thumbnail small2" style="padding: 0px; position:relative;">
               <div>
                 <a href="#layer{{ forloop.counter }}" class="btn-example" role="button">
                   <img class="video-img" src="https://img.youtube.com/vi/{{ content.videoId }}/0.jpg" alt="...">
@@ -91,7 +91,7 @@
               </div>
               <p>
                 <!-- <a href="#" class="btn btn-primary" role="button">투표하기</a> -->
-                <div class="fb-wrapper" style="margin:0 auto; width:90px; height:30px;">
+                <div class="fb-wrapper">
                   <div class="fb-like"
                   data-href="http://abiliter9challenge.pythonanywhere.com/{{content.id}}"
                   data-layout="button_count"
