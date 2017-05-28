@@ -40,18 +40,18 @@
               <div class="thumbnail" style="padding: 0px;">
                 <div>
                   <!-- <img src="{% static 'img/rank1.png'%}" alt=""> -->
-                  <a href="#layer{{ forloop.counter }}" class="btn-example" role="button">
+                  <a href="#layer{{ item.id|add:"100" }}" class="btn-example" role="button">
                     <img class="video-img" src="https://img.youtube.com/vi/{{ item.videoId }}/0.jpg" alt="...">
                   </a>
                 </div>
-              <div id="dim-layer{{ forloop.counter }}">
+              <div id="dim-layer{{ item.id|add:"100" }}">
                 <div class="dimBg"></div>
-                <div id="layer{{ forloop.counter }}" class="pop-layer">
+                <div id="layer{{ item.id|add:"100" }}" class="pop-layer">
                   <div class="pop-container">
                     <div class="pop-conts">
                       <!--content //-->
                       <p class="ctxt mb20">
-                        <iframe id="iframe{{ forloop.counter }}" width="560" height="315" src="https://www.youtube.com/embed/{{ content.videoId }}" frameborder="0" allowfullscreen></iframe>
+                        <iframe id="iframe{{ item.id|add:"100" }}" width="560" height="315" src="https://www.youtube.com/embed/{{ item.videoId }}" frameborder="0" allowfullscreen></iframe>
                       </p>
 
                       <div class="btn-r">
@@ -85,7 +85,7 @@
           <div class="col-sm-3 col-md-3">
             <div class="thumbnail small2" style="padding: 0px; position:relative;">
               <div>
-                <a href="#layer{{ forloop.counter }}" class="btn-example" role="button">
+                <a href="#layer{{ content.id }}" class="btn-example" role="button">
                   <img class="video-img" src="https://img.youtube.com/vi/{{ content.videoId }}/0.jpg" alt="...">
                 </a>
               </div>
@@ -103,14 +103,14 @@
                 </div>
               </div>
             </p>
-            <div id="dim-layer{{ forloop.counter }}">
+            <div id="dim-layer{{ content.id }}">
               <div class="dimBg"></div>
-              <div id="layer{{ forloop.counter }}" class="pop-layer">
+              <div id="layer{{ content.id }}" class="pop-layer">
                 <div class="pop-container">
                   <div class="pop-conts">
                     <!--content //-->
                     <p class="ctxt mb20">
-                      <iframe id="iframe{{ forloop.counter }}" width="560" height="315" src="https://www.youtube.com/embed/{{ content.videoId }}" frameborder="0" allowfullscreen></iframe>
+                      <iframe id="iframe{{ content.id }}" width="560" height="315" src="https://www.youtube.com/embed/{{ content.videoId }}" frameborder="0" allowfullscreen></iframe>
                     </p>
 
                     <div class="btn-r">
